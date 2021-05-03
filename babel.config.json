@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "edge": "90",
+          "chrome": "90",
+          "firefox": "78"
+        }
+      }
+    ]
+  ]
+}
