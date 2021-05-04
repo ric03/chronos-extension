@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menuframe</title>
+    <link rel="stylesheet" type="text/css" href="/chronos-extension/resources/mock-site/index.mock.css">
+</head>
+<body>
+
+<div class="menu-placeholder">
+    <h4>Placeholder</h4>
+    <p>because the actual menu is partially collapsed</p>
+</div>
+
+<div id="do_3" class="btn-alike font-small">Personaldaten</div>
+<div class="ml-1">
+    <div id="do_7" class="btn-alike font-small">Ausweisverwaltung</div>
+    <div id="do_11" class="btn-alike font-small">Urlaubskonten</div>
+    <div id="do_15" class="btn-alike font-small">Jahresblatt</div>
+    <div id="do_19" class="btn-alike font-small">Buchungen</div>
+</div>
+
+
+<div id="do_31" class="btn-alike font-small">Workflow</div>
+<div class="ml-1">
+    <div id="do_35" class="btn-alike font-small">Buchen</div>
+    <div id="do_39" class="btn-alike font-small">Fehlzeit</div>
+</div>
+
+
+<div id="do_51" class="btn-alike font-small">Dienste</div>
+<div class="ml-1">
+    <div id="do_55" class="btn-alike font-small">Informationen Lesen</div>
+</div>
+
+
+<div id="do_67" class="btn-alike font-small">Passwort aendern</div>
+<div id="do_79" class="btn-alike font-small" onclick="onLogout()">Abmelden</div>
+
+<script>
+
+    const ids = ['do_3', 'do_7', 'do_11', 'do_15', 'do_19', 'do_31', 'do_35', 'do_39', 'do_51', 'do_55', 'do_67', 'do_79'];
+    ids.forEach((id) => {
+        document.getElementById(id).addEventListener('click', logClick);
+    })
+
+    function logClick({target}) {
+        const id = target.id
+        const text = target.textContent
+        console.log(`#${id} '${text}' has been clicked`)
+    }
+
+    function onLogout() {
+        window.parent.frames['headerframe'].location = '../headerframe/header.not-logged-in.frame.html';
+        window.parent.frames['mainframe'].location = '../mainframe/login.frame.html';
+    }
+
+</script>
+
+</body>
+</html>

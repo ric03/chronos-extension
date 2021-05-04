@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", serif;
+    background: #222222;
+    color: white;
+
+    margin: 0;
+}
+
+.btn-alike {
+    padding: 0 10px;
+    border: 1px solid #909090;
+    border-radius: 3px;
+}
+
+.font-small {
+    font-size: small;
+}
+
+.btn-alike:hover {
+    cursor: pointer;
+    background: #555555;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.pr-1 {
+    padding-right: 1em;
+}
+
+.float-right {
+    float: right;
+}
+
+.menu-placeholder {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 8px;
+
+    background: #555555;
+}
