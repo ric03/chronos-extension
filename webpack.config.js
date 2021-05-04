@@ -24,7 +24,8 @@ const config = {
         ]
     },
     output: {path: path.join(__dirname, "build"), filename: "[name].js"},
-    mode: "development", // "production"
+    mode: "development",
+    // mode: "production",
     devtool: "source-map", // see https://webpack.js.org/configuration/devtool
 }
 
