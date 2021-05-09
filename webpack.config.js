@@ -2,7 +2,7 @@ const path = require("path")
 
 const config = {
     entry: {
-        content: path.join(__dirname, "src/content/index.js"),
+        content: path.join(__dirname, "src/content-scripts/index.js"),
     },
     module: {
         rules: [
