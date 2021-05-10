@@ -1,7 +1,7 @@
 import {last} from 'lodash'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {ShortcutButtons} from './ShortcutButtons'
+import {ShortcutButtons} from './menu/ShortcutButtons'
 
 const frameName = document.defaultView.name
 
