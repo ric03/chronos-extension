@@ -19,6 +19,12 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run test:debug`
+
+Add `debugger` in any test, run the command, and open the url.  
+This will start running your Jest tests, but pause before executing to allow a debugger to attach to the process.  
+See [debugging tests](https://create-react-app.dev/docs/debugging-tests) for more information.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
