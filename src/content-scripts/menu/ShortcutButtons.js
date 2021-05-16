@@ -1,4 +1,6 @@
 import React from "react"
+import ReactDOM from "react-dom";
+import createRootNode from "../create-root-node";
 import {ExistingMenuButtonIdMap as Target} from "./ExistingMenuButtonIdMap"
 import './ShortcutButtons.css'
 
@@ -26,4 +28,13 @@ export class ShortcutButtons extends React.PureComponent {
             </div>
         )
     }
+}
+
+export function renderShortcutButtons() {
+    ReactDOM.render(
+        <React.StrictMode>
+            <ShortcutButtons/>
+        </React.StrictMode>,
+        createRootNode()
+    )
 }
